@@ -10,9 +10,42 @@ entries:
       title: Overview
       url: /
     - output: web,pdf
-      title: Within Sequence Module
-      url: core.html
+      title: Quick Start
+      url: /quick_start
     output: web
-    title: pysan
+    title: Getting Started
+  - folderitems:
+    - output: web,pdf
+      title: Overview
+      url: /core_overview
+    - output: web,pdf
+      title: Element Descriptions
+      url: /core_elements
+    - output: web,pdf
+      title: Subsequences
+      url: /core_subsequences
+    - output: web,pdf
+      title: Ngrams
+      url: /core_ngrams
+    - output: web,pdf
+      title: Transitions
+      url: /core_transitions
+    - output: web,pdf
+      title: Spells
+      url: /core_spells
+    - output: web,pdf
+      title: Summary Statistics
+      url: /core_statistics
+    output: web
+    title: Single Sequence Analysis
+  - folderitems:
+    - output: web,pdf
+      title: Overview
+      url: /multi_overview
+    - output: web,pdf
+      title: Attributes
+      url: /multi_attributes
+    output: web
+    title: Multisequence Analysis
   output: web
   title: Sidebar

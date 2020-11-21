@@ -2,9 +2,34 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"generate_sequence": "00_core.ipynb"}
+index = {"get_alphabet": "11_core_elements.ipynb",
+         "get_element_counts": "11_core_elements.ipynb",
+         "get_first_positions": "11_core_elements.ipynb",
+         "get_element_frequency": "11_core_elements.ipynb",
+         "get_subsequences": "12_core_subsequences.ipynb",
+         "get_ndistinct_subsequences": "12_core_subsequences.ipynb",
+         "get_unique_ngrams": "13_core_ngrams.ipynb",
+         "get_all_ngrams": "13_core_ngrams.ipynb",
+         "get_ngram_universe": "13_core_ngrams.ipynb",
+         "get_ngram_counts": "13_core_ngrams.ipynb",
+         "get_transitions": "14_core_transitions.ipynb",
+         "get_ntransitions": "14_core_transitions.ipynb",
+         "get_transition_matrix": "14_core_transitions.ipynb",
+         "get_spells": "15_core_spells.ipynb",
+         "get_longest_spell": "15_core_spells.ipynb",
+         "get_spell_durations": "15_core_spells.ipynb",
+         "is_recurrent": "16_core_statistics.ipynb",
+         "get_entropy": "16_core_statistics.ipynb",
+         "get_turbulence": "16_core_statistics.ipynb",
+         "get_complexity": "16_core_statistics.ipynb",
+         "get_routine": "16_core_statistics.ipynb"}
 
-modules = ["core.py"]
+modules = ["core/elements.py",
+           "core/subsequences.py",
+           "core/ngrams.py",
+           "core/transitions.py",
+           "core/spells.py",
+           "core/statistics.py"]
 
 doc_url = "https://pysan-dev.github.io/pysan/"
 

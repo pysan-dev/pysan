@@ -1,6 +1,19 @@
 {
-  "pysan": {
-    "Overview": "/",
-    "Within Sequence Module": "core.html"
-  }
+	"Getting Started": {
+		"Overview": "/",
+		"Quick Start": "/quick_start"
+	},
+	"Single Sequence Analysis": {
+		"Overview": "/core_overview",
+		"Element Descriptions": "/core_elements",
+		"Subsequences": "/core_subsequences",
+		"Ngrams": "/core_ngrams",
+		"Transitions": "/core_transitions",
+		"Spells": "/core_spells",
+		"Summary Statistics": "/core_statistics"		
+	},
+	"Multisequence Analysis":{
+		"Overview": "/multi_overview",
+		"Attributes": "/multi_attributes"
+	}
 }
