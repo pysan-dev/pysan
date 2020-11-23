@@ -45,6 +45,21 @@ entries:
     - output: web,pdf
       title: Attributes
       url: /multi_attributes
+    - output: web,pdf
+      title: Derivatives
+      url: /multi_derivatives
+    - output: web,pdf
+      title: Edit Distances
+      url: /multi_edit_distances
+    - output: web,pdf
+      title: Non-alignment Techniques
+      url: /multi_nonalignment
+    - output: web,pdf
+      title: Spell-adjusted Distances
+      url: /multi_spell_distances
+    - output: web,pdf
+      title: Whole Sequence Comparison
+      url: /multi_whole_comparison
     output: web
     title: Multisequence Analysis
   output: web

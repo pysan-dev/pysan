@@ -1348,7 +1348,7 @@ div.input + details {
 /* CUSTOM CSS STARTS HERE */
 
 h4.clickable-header{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .input_area pre{
     padding: 6px;
@@ -1360,4 +1360,13 @@ h4.clickable-header{
 .output_wrapper pre{
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+}
+
+div.output_subarea{
+    border-top: 4px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.footer img{
+    display: none;
 }

@@ -14,6 +14,11 @@
 	},
 	"Multisequence Analysis":{
 		"Overview": "/multi_overview",
-		"Attributes": "/multi_attributes"
+		"Attributes": "/multi_attributes",
+		"Derivatives": "/multi_derivatives",
+		"Edit Distances": "/multi_edit_distances",
+		"Non-alignment Techniques": "/multi_nonalignment",
+		"Spell-adjusted Distances": "/multi_spell_distances",
+		"Whole Sequence Comparison": "/multi_whole_comparison"
 	}
 }

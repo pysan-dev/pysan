@@ -239,6 +239,84 @@ The first step is to find out which elements exist in the sequence, which can be
 </div>
 </div>
 </div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<h4 id="plot_element_counts" class="doc_header"><code>plot_element_counts</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/elements.py#L45" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>plot_element_counts</code>(<strong><code>sequence</code></strong>)</p>
+</blockquote>
+<p>Plots the number of occurances of each unique element in a given sequence.</p>
+
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sequence</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="n">plot_element_counts</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;module &#39;matplotlib.pyplot&#39; from &#39;/home/ojs/.local/lib/python3.8/site-packages/matplotlib/pyplot.py&#39;&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area">
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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KDVLly5VeXm5Bg4ceM3ve/369brjjjs0bty4Xq/FGTWAPmvp0qU6depUVu57/fr1qqurS8tahBpAWrz33nsqKytTSUmJnnjiCbW0tKR8zKBBg7R48WLdeeeduu+++7R9+3ZNnz5dt912mzZs2CBJamlp0eLFizVp0iTdddddevPNNyVJW7Zs0fTp0/Xggw9qzJgxeuSRR+TuWrZsmb799lvNmDFDM2bMuGSWqqoqTZkyRePHj1dZWZmam5t15swZPfrooyouLtaECRNUWVkpSVq1apWefvrp9tvOmzdPW7ZsaZ/9+eef1/jx4zV58mR99913+uSTT7RhwwYtXrxYJSUl+uqrr3r1tSXUAHqtvr5ea9eu1bZt21RbW6ucnBytXr065WNOnjypmTNnas+ePSosLNQLL7ygTZs2ad26dXrxxRclSStXrtTgwYNVVVWlqqoqrVixQl9//bUkaefOnVq6dKnq6uq0f/9+bdu2Tc8884xuueUWVVZWtgf3grNnz+qhhx7Sa6+9pl27dmnz5s0aMGCAli9fLjPT7t27tWbNGi1cuLDHKzROnjypyZMna9euXZo2bZpWrFihKVOmaP78+Xr11VdVW1ur22+/vVdfX/aoAfTaxx9/rJqaGk2aNEmSdPr0ad18880pH5Ofn685c+ZIkoqLi9W/f3/l5eWpuLhYDQ0NkqSNGzfqs88+U0VFhSSpqalJX375pfLz81VWVqaioiJJUklJiRoaGnTPPfd0O+/evXs1fPjw9lluvPFGSdLWrVu1aNEiSdKYMWM0cuRI7du377L/7fn5+Zo3b54k6e6779amTZtS+IpdGUINoNfcXQsXLtTLL798Vcfk5eW1X7bWr18/9e/fv/398+fPt9/+9ddf1+zZsy+67ZYtW9qPl6ScnJz226RLbm6uWltb2z/ueJbdcfZM3LfE1geANJg1a5YqKip05MgRSdLx48f1zTffXPExlzN79my98cYbOnfunCRp3759Onny5GVvU1hYqObm5kv+fPTo0Tp8+LCqqqokSc3NzTp//rzuvffe9u2Yffv26cCBAxo9erQSiYRqa2vV2tqqgwcPavv27T3O2919Xw3OqIE+qDeX012NcePG6aWXXtIDDzyg1tZW5eXlafny5Ro5cuQVHXM5jz32mBoaGjRx4kS5u4YNG6b169df9jbl5eWaM2dO+171Bfn5+Vq7dq0WLVqk06dPa8CAAdq8ebOeeuopPfnkkyouLlZubq5WrVql/v37a+rUqRo1apTGjRunsWPHauLEiT3Ou2DBAj3++ONatmyZKioqerVPbe5+1TfuTmlpqVdXV6d9XQBdq6+v19ixY7M9BlLU1d+XmdW4e2lXx7P1AQDBEWoACI5QA31EJrYxkX5X8/dEqIE+oKCgQMeOHSPWwV14PeqCgoIruh1XfQB9QFFRkRobG3X06NFsj4IeXPgNL1eCUAN9QF5e3hX9xhD8sLD1AQDBEWoACI5QA0BwGXlmopk1S9qb9oXTY6ik32Z7iMtgvt5hvt5hvqvX29lGuvuwrj6RqQcT93b3VMhsM7PqqLNJzNdbzNc7zHf1MjkbWx8AEByhBoDgMhXqtzK0bjpEnk1ivt5ivt5hvquXsdky8mAiACB92PoAgOAINQAEl9ZQm9kcM9trZr8xsyXpXLu3zOwdMztiZp9ne5aumNmtZlZpZnVmtsfMns32TB2ZWYGZbTezXcn5fprtmTozsxwz22lmv8j2LJ2ZWYOZ7TazWjML9+uPzOwmM6swsy/MrN7M/iTbM11gZqOTX7cLb9+b2XPZnqsjM/vr5PfF52a2xsyu7OXxelo/XXvUZpYjaZ+k+yU1SqqS9LC716XlDnrJzKZJOiHpX9z9R9mepzMzGy5puLvvMLNCSTWS/jzQ188k3eDuJ8wsT9JWSc+6+6+zPFo7M/sbSaWSbnT3edmepyMza5BU6u4hn6xhZu9K+m93f9vM8iUNdPffZXmsSyQ7c0jSH7t76r8ZN4PMbITavh/GuftpM3tf0i/dfVW67iOdZ9Rlkn7j7vvd/aykn0v6szSu3yvu/itJx7M9R3fc/bC770i+3yypXtKI7E71e97mRPLDvORbmEeizaxI0lxJb2d7lh8aMxssaZqklZLk7mcjRjpplqSvokS6g1xJA8wsV9JASd+mc/F0hnqEpIMdPm5UoND8kJhZQtIESZ9meZSLJLcWaiUdkbTJ3SPNt1TS30lqzfIc3XFJG82sxszKsz1MJ6MkHZX0z8mto7fN7IZsD9WNBZLWZHuIjtz9kKR/knRA0mFJTe6+MZ33wYOJwZjZIEkfSHrO3b/P9jwduXuLu5dIKpJUZmYhtpDMbJ6kI+5ek+1ZLuMed58o6ceS/iq5FRdFrqSJkt5w9wmSTkoK9RiTJCW3ZOZL+rdsz9KRmf2B2nYPRkm6RdINZvYX6byPdIb6kKRbO3xclPwzpCi59/uBpNXu/mG25+lO8sfiSklzsjzKBVMlzU/uA/9c0kwzey+7I10sedYldz8iaZ3atgqjaJTU2OEnpAq1hTuaH0va4e7fZXuQTu6T9LW7H3X3c5I+lDQlnXeQzlBXSfojMxuV/JdvgaQNaVy/T0s+WLdSUr27/yzb83RmZsPM7Kbk+wPU9qDxF1kdKsnd/97di9w9obb/7/7L3dN6RtMbZnZD8gFiJbcUHpAU5uojd/9fSQfNbHTyj2ZJCvEgdicPK9i2R9IBSZPNbGDy+3iW2h5jSpu0vXqeu583s6cl/aekHEnvuPuedK3fW2a2RtJ0SUPNrFHSP7r7yuxOdZGpkn4iaXdyH1iS/sHdf5m9kS4yXNK7yUfd+0l6393DXQYX1B9KWtf2PaxcSf/q7v+R3ZEusUjS6uRJ1n5Jj2Z5nosk/4G7X9IT2Z6lM3f/1MwqJO2QdF7STqX56eQ8hRwAguPBRAAIjlADQHCEGgCCI9QAEByhBoDgCDUABEeoASC4/wfbTCZ3f4U4HAAAAABJRU5ErkJggg==
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
