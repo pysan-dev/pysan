@@ -4,43 +4,43 @@ __all__ = ['get_transitions', 'get_ntransitions', 'get_transition_matrix']
 
 # Cell
 def get_transitions(sequence):
-	"Extracts a list of transitions from a sequence, returning a list of lists containing each transition."
+    "Extracts a list of transitions from a sequence, returning a list of lists containing each transition."
 
-	transitions = []
-	for position in range(len(sequence) - 1):
-		if sequence[position] != sequence[position + 1]:
-			transitions.append([sequence[position], sequence[position + 1]])
+    transitions = []
+    for position in range(len(sequence) - 1):
+        if sequence[position] != sequence[position + 1]:
+            transitions.append([sequence[position], sequence[position + 1]])
 
-	return transitions
+    return transitions
 
 # Cell
 def get_ntransitions(sequence):
-	"Computes the number of transitions in a sequence."	
-	return len(get_transitions(sequence))
+    "Computes the number of transitions in a sequence."	
+    return len(get_transitions(sequence))
 
 # Cell
 def get_transition_matrix(sequence, alphabet=None, verbose=False):
-	"Computes a transition matrix for each bigram in a sequence. The resulting matrix can be interpreted by reading along the side first, then across the top, indicating from the element in down the side to the element along the top. For example, to find the number of transitions from element 2 to element 3, find element 2 down the side, then follow that row across until it reaches element 3 across the top."
-	if alphabet == None:
-		alphabet = get_alphabet(sequence)
-	all_ngrams = get_all_ngrams(sequence, 2)
+    "Computes a transition matrix for each bigram in a sequence. The resulting matrix can be interpreted by reading along the side first, then across the top, indicating from the element in down the side to the element along the top. For example, to find the number of transitions from element 2 to element 3, find element 2 down the side, then follow that row across until it reaches element 3 across the top."
+    if alphabet == None:
+        alphabet = get_alphabet(sequence)
+    all_ngrams = get_all_ngrams(sequence, 2)
 
-	transition_matrix = np.zeros((len(alphabet), len(alphabet)))
-	descriptive_matrix = [['-' for x in range(len(alphabet))] for y in range(len(alphabet))]
+    transition_matrix = np.zeros((len(alphabet), len(alphabet)))
+    descriptive_matrix = [['-' for x in range(len(alphabet))] for y in range(len(alphabet))]
 
-	for x, element_row in enumerate(alphabet):
-		for y, element_column in enumerate(alphabet):
-			current_ngram = [element_row, element_column]
-			descriptive_matrix[x][y] = 'n' + str(current_ngram)
-			#print('from', current_ngram[0], 'to', current_ngram[1], ':', all_ngrams.count(current_ngram))
-			transition_matrix[x, y] = all_ngrams.count(current_ngram)
+    for x, element_row in enumerate(alphabet):
+        for y, element_column in enumerate(alphabet):
+            current_ngram = [element_row, element_column]
+            descriptive_matrix[x][y] = 'n' + str(current_ngram)
+            #print('from', current_ngram[0], 'to', current_ngram[1], ':', all_ngrams.count(current_ngram))
+            transition_matrix[x, y] = all_ngrams.count(current_ngram)
 
-	# add column & index labelling in TraMineR style
-	pre_alphabet = [str(a) + '->' for a in alphabet]
-	post_alphabet = ['->' + str(a) for a in alphabet]
+    # add column & index labelling in TraMineR style
+    pre_alphabet = [str(a) + '->' for a in alphabet]
+    post_alphabet = ['->' + str(a) for a in alphabet]
 
-	if verbose:
-		de_df = pd.DataFrame(descriptive_matrix, columns=post_alphabet, index=pre_alphabet)
-		print(de_df)
-	tm_df = pd.DataFrame(transition_matrix, columns=post_alphabet, index=pre_alphabet)
-	return tm_df
+    if verbose:
+        de_df = pd.DataFrame(descriptive_matrix, columns=post_alphabet, index=pre_alphabet)
+        print(de_df)
+    tm_df = pd.DataFrame(transition_matrix, columns=post_alphabet, index=pre_alphabet)
+    return tm_df

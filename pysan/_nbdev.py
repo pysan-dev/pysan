@@ -2,7 +2,9 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {"get_alphabet": "11_core_elements.ipynb",
+index = {"plot_sequence": "10_core_overview.ipynb",
+         "plot_sequence_1d": "10_core_overview.ipynb",
+         "get_alphabet": "11_core_elements.ipynb",
          "get_element_counts": "11_core_elements.ipynb",
          "get_first_positions": "11_core_elements.ipynb",
          "get_element_frequency": "11_core_elements.ipynb",
@@ -36,7 +38,8 @@ index = {"get_alphabet": "11_core_elements.ipynb",
          "get_hamming_distance": "23_multi_edit_distances.ipynb",
          "get_combinatorial_distance": "24_multi_nonalignment.ipynb"}
 
-modules = ["core/elements.py",
+modules = ["core/overview.py",
+           "core/elements.py",
            "core/subsequences.py",
            "core/ngrams.py",
            "core/transitions.py",

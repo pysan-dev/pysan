@@ -4,46 +4,46 @@ __all__ = ['get_unique_ngrams', 'get_all_ngrams', 'get_ngram_universe', 'get_ngr
 
 # Cell
 def get_unique_ngrams(sequence, n):
-	"Creates a list of all unique ngrams found in a given sequence."	
-	unique_ngrams = []
-	for x in range(len(sequence) -  n + 1):
-		this_ngram = sequence[x:x + n]
-		
-		if str(this_ngram) not in unique_ngrams:
-			unique_ngrams.append(str(this_ngram))
-			
-	return [eval(x) for x in unique_ngrams]
+    "Creates a list of all unique ngrams found in a given sequence."	
+    unique_ngrams = []
+    for x in range(len(sequence) -  n + 1):
+        this_ngram = sequence[x:x + n]
+
+        if str(this_ngram) not in unique_ngrams:
+            unique_ngrams.append(str(this_ngram))
+
+    return [eval(x) for x in unique_ngrams]
 
 # Cell
 def get_all_ngrams(sequence, n):
-	"Creates a list of all ngrams found in a given sequence."
-	
-	all_ngrams = []
-	for x in range(len(sequence) -  n + 1):
-		this_ngram = sequence[x:x + n]
-		all_ngrams.append(this_ngram)
-			
-	return all_ngrams
+    "Creates a list of all ngrams found in a given sequence."
+
+    all_ngrams = []
+    for x in range(len(sequence) -  n + 1):
+        this_ngram = sequence[x:x + n]
+        all_ngrams.append(this_ngram)
+
+    return all_ngrams
 
 # Cell
 def get_ngram_universe(sequence, n):
-	"Computes the universe of possible ngrams given a sequence. Where n is equal to the length of the sequence, the resulting number represents the sequence universe."
-	# if recurrance is possible, the universe is given by k^t (SSA pg 68)
-	k = len(set(sequence))
-	if k > 10 and n > 10:
-		return 'really big'
-	return k**n
+    "Computes the universe of possible ngrams given a sequence. Where n is equal to the length of the sequence, the resulting number represents the sequence universe."
+    # if recurrance is possible, the universe is given by k^t (SSA pg 68)
+    k = len(set(sequence))
+    if k > 10 and n > 10:
+        return 'really big'
+    return k**n
 
 # Cell
 def get_ngram_counts(sequence, n):
-	"Computes the prevalence of ngrams in a sequence, returning a dictionary where each key is an ngram, and each value is the number of times that ngram appears in the sequence."
-	
-	ngrams = get_unique_ngrams(sequence, n)
-	
-	ngram_counts = {str(i):0 for i in ngrams}
-	
-	for x in range(len(sequence) -  n + 1):
-		this_ngram = sequence[x:x + n]
-		ngram_counts[str(this_ngram)] += 1
-	
-	return ngram_counts
+    "Computes the prevalence of ngrams in a sequence, returning a dictionary where each key is an ngram, and each value is the number of times that ngram appears in the sequence."
+
+    ngrams = get_unique_ngrams(sequence, n)
+
+    ngram_counts = {str(i):0 for i in ngrams}
+
+    for x in range(len(sequence) -  n + 1):
+        this_ngram = sequence[x:x + n]
+        ngram_counts[str(this_ngram)] += 1
+
+    return ngram_counts

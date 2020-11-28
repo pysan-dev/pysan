@@ -20,5 +20,10 @@
 		"Non-alignment Techniques": "/multi_nonalignment",
 		"Spell-adjusted Distances": "/multi_spell_distances",
 		"Whole Sequence Comparison": "/multi_whole_comparison"
+	},
+	"External Resources":{
+		"Sequence Analysis Association": "https://sequenceanalysis.org/",
+		"TraMineR Library": "http://traminer.unige.ch/",
+		"Biopython Library": "https://biopython.org/"
 	}
 }

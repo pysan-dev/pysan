@@ -62,5 +62,17 @@ entries:
       url: /multi_whole_comparison
     output: web
     title: Multisequence Analysis
+  - folderitems:
+    - external_url: https://sequenceanalysis.org/
+      output: web,pdf
+      title: Sequence Analysis Association
+    - external_url: http://traminer.unige.ch/
+      output: web,pdf
+      title: TraMineR Library
+    - external_url: https://biopython.org/
+      output: web,pdf
+      title: Biopython Library
+    output: web
+    title: External Resources
   output: web
   title: Sidebar

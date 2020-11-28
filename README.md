@@ -1,13 +1,14 @@
-# pysan
+# Welcome to the pysan library
 > Sequence analysis in Python
 
 
 
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pysan-dev/pysan/CI?logo=github&style=flat-square&)](https://github.com/pysan-dev/pysan/actions)
-[![PyPI](https://img.shields.io/pypi/v/pysan?style=flat-square&color=blue)](https://pypi.org/project/PySAN/)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/pysan-dev/pysan/CI?logo=github&style=for-the-badge&)](https://github.com/pysan-dev/pysan/actions)
+[![PyPI](https://img.shields.io/pypi/v/pysan?style=for-the-badge&color=blue)](https://pypi.org/project/PySAN/)
 
-The pysan library is a collection of methods for doing sequence analysis. It's free, open source, and each method is fully documented with examples.
-Using pysan you'll be able to run powerful sequence analysis and visualisation tasks with just a few lines of code, and integrate or extend them into your other Python workflows.
+The pysan library is a collection of methods for doing sequence analysis. It's free, open source, and each method is fully documented with examples. Using pysan you'll be able to run powerful sequence analysis and visualisation tasks with just a few lines of code, and integrate or extend them into your other Python workflows.
+
+The pysan library is specifically for sequence analysis in the social sciences, which concerns the order in which people do things (like communicate), but can be applied to broader sequence analysis problems that are framed in the sequence domain. To find out more, get started by installing the library using the commands below, and read through the rest of this site.
 
 ## Install
 
@@ -28,6 +29,4 @@ The pysan library contains methods for visualising, comparing, and dissecting se
 
 **Why Python?** - Python is quickly becoming *the* go-to language for data analysis across a number of research areas.
 By writing a sequence analysis library in Python, analysts can take advantage of other tools written in Python, whilst writing simple and readable code.
-
-Get started by clicking through the links above, and installing the library using the pip command or cloning the repository.
 

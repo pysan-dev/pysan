@@ -61,3 +61,13 @@ sidebars:
 
 theme: jekyll-theme-cayman
 baseurl: /pysan/
+
+
+plugins:
+  - jekyll-scholar
+
+scholar:
+  style: custom_citation_style
+  sort_by: none
+  source: ../
+  
