@@ -1,6 +1,6 @@
 ---
 
-title: Elements
+title: Element Descriptions
 
 
 keywords: fastai
@@ -31,9 +31,14 @@ nb_path: "11_core_elements.ipynb"
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Describing the unique elements, frequencies, first positions, and raw counts of elements within a given sequence can be a useful way to get some insight into how the sequence is composed.
-The first step is to find out which elements exist in the sequence, which can be done using the <a href="/pysan/core_elements.html#get_alphabet"><code>get_alphabet</code></a> method.</p>
+<h2 id="Overview">Overview<a class="anchor-link" href="#Overview"> </a></h2><p>Describing the unique elements, frequencies, first positions, and raw counts of elements within a given sequence can be a useful way to get some insight into how the sequence is composed. The <code>pysan.core.elements</code> module contains methods for computing each of these descriptors, and methods for visualising their outputs.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Methods">Methods<a class="anchor-link" href="#Methods"> </a></h2>
 </div>
 </div>
 </div>
@@ -235,7 +240,8 @@ The first step is to find out which elements exist in the sequence, which can be
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Visualisation">Visualisation<a class="anchor-link" href="#Visualisation"> </a></h1>
+<h2 id="Plotting">Plotting<a class="anchor-link" href="#Plotting"> </a></h2><p>Each of the element plotting techniques in the pysan library calls the method(s) needed to plot the data being visualised. For example, the <a href="/pysan/core_elements.html#plot_element_counts"><code>plot_element_counts</code></a> method below calls <a href="/pysan/core_elements.html#get_element_counts"><code>get_element_counts</code></a> itself so you don't have to.</p>
+
 </div>
 </div>
 </div>

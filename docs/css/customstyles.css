@@ -1401,10 +1401,18 @@ ol.bibliography li{
     background-color: var(--theme) !important;
 
 }
+h2{
+    margin-top: 30px;
+    border-top-color: var(--theme);
+}
 .nav > li > a:hover{
     background-color: var(--theme) !important;    
 }
 
 span.projectTitle{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+}
+
+div#toc ul li ul{
+    padding-left: 10px;
 }
