@@ -2,6 +2,8 @@
 {% assign pageurl = page.url  | remove: ".html" %}
 
 <ul id="mysidebar" class="nav">
+  {% assign current_page = pageurl | append: '.html' %}
+  <!--<p>{{ current_page }}</p>-->
   <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
   {% for entry in sidebar %}
   {% for folder in entry.folders %}
@@ -10,16 +12,20 @@
       <a href="#">{{ folder.title }}</a>
       <ul>
           {% for folderitem in folder.folderitems %}
+          {% assign current_folder = '/' | append: folderitem.url %}
+          <!--<p>{{ current_folder }}</p>-->
           {% if folderitem.output contains "web" %}
           {% if folderitem.external_url %}
           <li><a href="{{folderitem.external_url}}" target="_blank">{{folderitem.title}}</a></li>
-          {% elsif pageurl == folderitem.url %}
-          <li class="active"><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
+
+
+          {% elsif current_page == current_folder %}
+          <li class="active"><a href="{{folderitem.url | relativize_url}}">{{folderitem.title}}</a></li>
           {% elsif folderitem.type == "empty" %}
-          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
+          <li><a href="{{folderitem.url | relativize_url}}">{{folderitem.title}}</a></li>
 
           {% else %}
-          <li><a href="{{folderitem.url | relative_url}}">{{folderitem.title}}</a></li>
+          <li><a href="{{folderitem.url | relativize_url}}">{{folderitem.title}}</a></li>
           {% endif %}
           {% for subfolders in folderitem.subfolders %}
           {% if subfolders.output contains "web" %}
@@ -31,9 +37,9 @@
                   {% if subfolderitem.external_url %}
                   <li><a href="{{subfolderitem.external_url}}" target="_blank">{{subfolderitem.title}}</a></li>
                   {% elsif pageurl == subfolderitem.url %}
-                  <li class="active"><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
+                  <li class="active"><a href="{{subfolderitem.url | relativize_url}}">{{subfolderitem.title}}</a></li>
                   {% else %}
-                  <li><a href="{{subfolderitem.url | relative_url}}">{{subfolderitem.title}}</a></li>
+                  <li><a href="{{subfolderitem.url | relativize_url}}">{{subfolderitem.title}}</a></li>
                   {% endif %}
                   {% endif %}
                   {% endfor %}
@@ -53,6 +59,7 @@
              <a href="#" id="collapseAll">Collapse All</a> | <a href="#" id="expandAll">Expand All</a>
          </p>
          -->
+         
 <p class="links"> 
   <a href="https://github.com/pysan-dev/pysan"><img src="https://img.shields.io/badge/-Visit%20Repo-grey?style=for-the-badge&amp;logo=github"></a> 
   <a href="https://pypi.org/project/PySAN/"><img src="https://img.shields.io/badge/-Download%20Package-grey?style=for-the-badge&amp;logo=python&amp;logoColor=white"></a> 

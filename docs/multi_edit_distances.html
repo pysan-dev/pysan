@@ -82,7 +82,7 @@ Sequences <code>s1</code> and <code>s2</code> can be given as parameters to each
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="get_levenshtein_distance" class="doc_header"><code>get_levenshtein_distance</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/multi/editdistances.py#L66" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_levenshtein_distance</code>(<strong><code>s1</code></strong>, <strong><code>s2</code></strong>)</p>
 </blockquote>
-<p>Computes the <a href="https://journals.sagepub.com/doi/abs/10.1177/0049124110362526">Levenshtein II distance</a> between two sequences, which is the optimal distance using only insertions and deletions. This is identical to the <a href="/pysan/multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with a mismatch cost of ~infinity (-9999999) and a gap cost of -1. See the <a href="/pysan/multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with its default parameters for the Levenshtein I distance.</p>
+<p>Computes the <a href="https://journals.sagepub.com/doi/abs/10.1177/0049124110362526">Levenshtein II distance</a> between two sequences, which is the optimal distance using only insertions and deletions. This is identical to the <a href="multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with a mismatch cost of ~infinity (-9999999) and a gap cost of -1. See the <a href="multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with its default parameters for the Levenshtein I distance.</p>
 
 </div>
 
@@ -114,7 +114,7 @@ Sequences <code>s1</code> and <code>s2</code> can be given as parameters to each
 <div class="output_markdown rendered_html output_subarea ">
 <h4 id="get_hamming_distance" class="doc_header"><code>get_hamming_distance</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/multi/editdistances.py#L71" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_hamming_distance</code>(<strong><code>s1</code></strong>, <strong><code>s2</code></strong>)</p>
 </blockquote>
-<p>Computes the Hamming distance  between two sequences, which is the optimal distance using only substitutions (no indels). This is identical to the <a href="/pysan/multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with a mismatch cost of -1 and a gap cost of ~infinity (-999999). Note that this can only be used on sequences of the same length given the infinite cost of gaps.</p>
+<p>Computes the Hamming distance  between two sequences, which is the optimal distance using only substitutions (no indels). This is identical to the <a href="multi_edit_distances.html#get_optimal_distance"><code>get_optimal_distance</code></a> method with a mismatch cost of -1 and a gap cost of ~infinity (-999999). Note that this can only be used on sequences of the same length given the infinite cost of gaps.</p>
 
 </div>
 

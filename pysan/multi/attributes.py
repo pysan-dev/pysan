@@ -14,18 +14,13 @@ def are_recurrent(sequences):
 
 # Cell
 def get_summary_statistic(sequence, function):
-    """
-    UC Computes a summary statistic (e.g. entropy, complexity, or turbulence) for each sequence in a collection, returning the results as a list.
-
-    """
+    "Computes a summary statistic (e.g. entropy, complexity, or turbulence) for each sequence in a collection, returning the results as a list."
 
     pass
 
 # Cell
 def get_routine_scores(sequences, duration):
-    """
-    UC Returns a list containing the routine scores for each sequence in a collection using :meth:`get_routine() <pysan.core.get_routine>`.
-    """
+    "Returns a list containing the routine scores for each sequence in a collection using :meth:`get_routine() <pysan.core.get_routine>`."
 
     pass
 

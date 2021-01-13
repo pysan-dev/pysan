@@ -1,25 +1,26 @@
 {
 	"Getting Started": {
-		"Overview": "/",
-		"Quick Start": "/quick_start"
+		"Overview": "https://pysan.org",
+		"Quick Start": "quick_start.html",
+		"Upcoming Features": "upcoming_features.html"
 	},
 	"Single Sequence Analysis": {
-		"Overview": "/core_overview",
-		"Element Descriptions": "/core_elements",
-		"Subsequences": "/core_subsequences",
-		"Ngrams": "/core_ngrams",
-		"Transitions": "/core_transitions",
-		"Spells": "/core_spells",
-		"Summary Statistics": "/core_statistics"		
+		"Overview": "core_overview.html",
+		"Element Descriptions": "core_elements.html",
+		"Subsequences": "core_subsequences.html",
+		"Ngrams": "core_ngrams.html",
+		"Transitions": "core_transitions.html",
+		"Spells": "core_spells.html",
+		"Summary Statistics": "core_statistics.html"		
 	},
 	"Multisequence Analysis":{
-		"Overview": "/multi_overview",
-		"Attributes": "/multi_attributes",
-		"Derivatives": "/multi_derivatives",
-		"Edit Distances": "/multi_edit_distances",
-		"Non-alignment Techniques": "/multi_nonalignment",
-		"Spell-adjusted Distances": "/multi_spell_distances",
-		"Whole Sequence Comparison": "/multi_whole_comparison"
+		"Overview": "multi_overview.html",
+		"Attributes": "multi_attributes.html",
+		"Derivatives": "multi_derivatives.html",
+		"Edit Distances": "multi_edit_distances.html",
+		"Non-alignment Techniques": "multi_nonalignment.html",
+		"Spell-adjusted Distances": "multi_spell_distances.html",
+		"Whole Sequence Comparison": "multi_whole_comparison.html"
 	},
 	"External Resources":{
 		"Sequence Analysis Association": "https://sequenceanalysis.org/",

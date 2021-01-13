@@ -6,60 +6,60 @@
 entries:
 - folders:
   - folderitems:
-    - output: web,pdf
+    - external_url: https://pysan.org
+      output: web,pdf
       title: Overview
-      url: /
     - output: web,pdf
       title: Quick Start
-      url: /quick_start
+      url: quick_start.html
     output: web
     title: Getting Started
   - folderitems:
     - output: web,pdf
       title: Overview
-      url: /core_overview
+      url: core_overview
     - output: web,pdf
       title: Element Descriptions
-      url: /core_elements
+      url: core_elements.html
     - output: web,pdf
       title: Subsequences
-      url: /core_subsequences
+      url: core_subsequences.html
     - output: web,pdf
       title: Ngrams
-      url: /core_ngrams
+      url: core_ngrams.html
     - output: web,pdf
       title: Transitions
-      url: /core_transitions
+      url: core_transitions.html
     - output: web,pdf
       title: Spells
-      url: /core_spells
+      url: core_spells.html
     - output: web,pdf
       title: Summary Statistics
-      url: /core_statistics
+      url: core_statistics.html
     output: web
     title: Single Sequence Analysis
   - folderitems:
     - output: web,pdf
       title: Overview
-      url: /multi_overview
+      url: multi_overview.html
     - output: web,pdf
       title: Attributes
-      url: /multi_attributes
+      url: multi_attributes.html
     - output: web,pdf
       title: Derivatives
-      url: /multi_derivatives
+      url: multi_derivatives.html
     - output: web,pdf
       title: Edit Distances
-      url: /multi_edit_distances
+      url: multi_edit_distances.html
     - output: web,pdf
       title: Non-alignment Techniques
-      url: /multi_nonalignment
+      url: multi_nonalignment.html
     - output: web,pdf
       title: Spell-adjusted Distances
-      url: /multi_spell_distances
+      url: multi_spell_distances.html
     - output: web,pdf
       title: Whole Sequence Comparison
-      url: /multi_whole_comparison
+      url: multi_whole_comparison.html
     output: web
     title: Multisequence Analysis
   - folderitems:
