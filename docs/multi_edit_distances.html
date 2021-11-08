@@ -91,24 +91,12 @@ Sequences <code>s1</code> and <code>s2</code> can be given as parameters to each
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">&lt;ipython-input-6-68b1db659bd1&gt;</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> s1 <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> s2 <span class="ansi-blue-fg">=</span> <span class="ansi-blue-fg">[</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">1</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">3</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">2</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">,</span><span class="ansi-cyan-fg">4</span><span class="ansi-blue-fg">]</span>
-<span class="ansi-green-fg">----&gt; 4</span><span class="ansi-red-fg"> </span>optimal_distance<span class="ansi-blue-fg">(</span>s1<span class="ansi-blue-fg">,</span>s2<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">~/Desktop/pysan/pysan/editdistances.py</span> in <span class="ansi-cyan-fg">optimal_distance</span><span class="ansi-blue-fg">(s1, s2, match, mismatch, gap)</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span>     n <span class="ansi-blue-fg">=</span> len<span class="ansi-blue-fg">(</span>s1<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span> <span class="ansi-red-fg">#The dimension of the matrix columns.</span>
-<span class="ansi-green-intense-fg ansi-bold">     11</span>     m <span class="ansi-blue-fg">=</span> len<span class="ansi-blue-fg">(</span>s2<span class="ansi-blue-fg">)</span> <span class="ansi-blue-fg">+</span> <span class="ansi-cyan-fg">1</span> <span class="ansi-red-fg">#The dimension of the matrix rows.</span>
-<span class="ansi-green-fg">---&gt; 12</span><span class="ansi-red-fg">     </span>al_mat <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>m<span class="ansi-blue-fg">,</span>n<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>dtype <span class="ansi-blue-fg">=</span> float<span class="ansi-blue-fg">)</span> <span class="ansi-red-fg">#Initializes the alighment matrix with zeros.</span>
-<span class="ansi-green-intense-fg ansi-bold">     13</span>     p_mat <span class="ansi-blue-fg">=</span> np<span class="ansi-blue-fg">.</span>zeros<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">(</span>m<span class="ansi-blue-fg">,</span>n<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">,</span>dtype <span class="ansi-blue-fg">=</span> str<span class="ansi-blue-fg">)</span> <span class="ansi-red-fg">#Initializes the pointer matrix with zeros.</span>
-<span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-red-fg">#Scans all the first rows element in the matrix and fill it with &#34;gap penalty&#34;</span>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;np&#39; is not defined</pre>
+<div class="output_text output_subarea output_execute_result">
+<pre>8.0</pre>
 </div>
+
 </div>
 
 </div>
@@ -166,6 +154,22 @@ Sequences <code>s1</code> and <code>s2</code> can be given as parameters to each
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>10.0</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
     {% endraw %}
 
@@ -215,6 +219,22 @@ Sequences <code>s1</code> and <code>s2</code> can be given as parameters to each
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>17.0</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
