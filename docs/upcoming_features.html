@@ -29,6 +29,12 @@ nb_path: "01_upcoming_features.ipynb"
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Debugging-Installation">Debugging Installation<a class="anchor-link" href="#Debugging-Installation"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -49,9 +55,7 @@ nb_path: "01_upcoming_features.ipynb"
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Found existing installation: pysan 0.2.2
-Uninstalling pysan-0.2.2:
-  Successfully uninstalled pysan-0.2.2
+<pre><span class="ansi-yellow-fg">WARNING: Skipping pysan as it is not installed.</span>
 </pre>
 </div>
 </div>
@@ -84,21 +88,20 @@ Uninstalling pysan-0.2.2:
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Defaulting to user installation because normal site-packages is not writeable
 Obtaining file:///home/ojs/Desktop/pysan
-Requirement already satisfied: matplotlib&gt;=3.3.1 in /usr/lib/python3.9/site-packages (from pysan==0.2.2) (3.4.2)
-Requirement already satisfied: pandas&gt;=1.0.5 in /home/ojs/.local/lib/python3.9/site-packages (from pysan==0.2.2) (1.3.0)
-Requirement already satisfied: cycler&gt;=0.10 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (0.10.0)
-Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (1.3.1)
-Requirement already satisfied: numpy&gt;=1.16 in /home/ojs/.local/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (1.20.1)
-Requirement already satisfied: pillow&gt;=6.2.0 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (8.3.1)
-Requirement already satisfied: pyparsing&gt;=2.2.1 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (2.4.7)
-Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (2.8.1)
-Requirement already satisfied: six in /usr/lib/python3.9/site-packages (from cycler&gt;=0.10-&gt;matplotlib&gt;=3.3.1-&gt;pysan==0.2.2) (1.16.0)
-Requirement already satisfied: pytz&gt;=2017.3 in /usr/lib/python3.9/site-packages (from pandas&gt;=1.0.5-&gt;pysan==0.2.2) (2021.1)
+  Preparing metadata (setup.py) ... done
+Requirement already satisfied: matplotlib&gt;=3.3.1 in /usr/lib/python3.9/site-packages (from pysan==0.2.3) (3.4.2)
+Requirement already satisfied: pandas&gt;=1.0.5 in /home/ojs/.local/lib/python3.9/site-packages (from pysan==0.2.3) (1.3.0)
+Requirement already satisfied: cycler&gt;=0.10 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (0.10.0)
+Requirement already satisfied: kiwisolver&gt;=1.0.1 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (1.3.1)
+Requirement already satisfied: numpy&gt;=1.16 in /home/ojs/.local/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (1.20.1)
+Requirement already satisfied: pillow&gt;=6.2.0 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (8.3.1)
+Requirement already satisfied: pyparsing&gt;=2.2.1 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (2.4.7)
+Requirement already satisfied: python-dateutil&gt;=2.7 in /usr/lib/python3.9/site-packages (from matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (2.8.1)
+Requirement already satisfied: pytz&gt;=2017.3 in /usr/lib/python3.9/site-packages (from pandas&gt;=1.0.5-&gt;pysan==0.2.3) (2021.1)
+Requirement already satisfied: six in /usr/lib/python3.9/site-packages (from cycler&gt;=0.10-&gt;matplotlib&gt;=3.3.1-&gt;pysan==0.2.3) (1.16.0)
 Installing collected packages: pysan
   Running setup.py develop for pysan
 Successfully installed pysan
-<span class="ansi-yellow-fg">WARNING: You are using pip version 21.1.2; however, version 21.3.1 is available.
-You should consider upgrading via the &#39;/usr/bin/python -m pip install --upgrade pip&#39; command.</span>
 </pre>
 </div>
 </div>
@@ -134,7 +137,8 @@ You should consider upgrading via the &#39;/usr/bin/python -m pip install --upgr
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[&#39;__builtins__&#39;,
+<pre>[&#39;__all__&#39;,
+ &#39;__builtins__&#39;,
  &#39;__cached__&#39;,
  &#39;__doc__&#39;,
  &#39;__file__&#39;,
@@ -143,10 +147,56 @@ You should consider upgrading via the &#39;/usr/bin/python -m pip install --upgr
  &#39;__package__&#39;,
  &#39;__path__&#39;,
  &#39;__spec__&#39;,
- &#39;__version__&#39;,
+ &#39;are_recurrent&#39;,
+ &#39;attributes&#39;,
  &#39;core&#39;,
+ &#39;derivatives&#39;,
+ &#39;editdistances&#39;,
  &#39;elements&#39;,
- &#39;subsequences&#39;]</pre>
+ &#39;get_all_ngrams&#39;,
+ &#39;get_alphabet&#39;,
+ &#39;get_combinatorial_distance&#39;,
+ &#39;get_complexity&#39;,
+ &#39;get_element_counts&#39;,
+ &#39;get_element_frequency&#39;,
+ &#39;get_entropy&#39;,
+ &#39;get_first_positions&#39;,
+ &#39;get_longest_spell&#39;,
+ &#39;get_modal_state&#39;,
+ &#39;get_motif&#39;,
+ &#39;get_ndistinct_subsequences&#39;,
+ &#39;get_ngram_counts&#39;,
+ &#39;get_ngram_universe&#39;,
+ &#39;get_ntransitions&#39;,
+ &#39;get_routine&#39;,
+ &#39;get_routine_scores&#39;,
+ &#39;get_sequence_frequencies&#39;,
+ &#39;get_spell_durations&#39;,
+ &#39;get_spells&#39;,
+ &#39;get_subsequences&#39;,
+ &#39;get_summary_statistic&#39;,
+ &#39;get_synchrony&#39;,
+ &#39;get_transition_matrix&#39;,
+ &#39;get_transitions&#39;,
+ &#39;get_turbulence&#39;,
+ &#39;get_unique_ngrams&#39;,
+ &#39;hamming_distance&#39;,
+ &#39;is_recurrent&#39;,
+ &#39;levenshtein_distance&#39;,
+ &#39;multi&#39;,
+ &#39;ngrams&#39;,
+ &#39;nonalignment&#39;,
+ &#39;optimal_distance&#39;,
+ &#39;plot_element_counts&#39;,
+ &#39;plot_ngram_counts&#39;,
+ &#39;plot_sequence&#39;,
+ &#39;plot_sequence_1d&#39;,
+ &#39;plot_sequences&#39;,
+ &#39;plot_transition_matrix&#39;,
+ &#39;spells&#39;,
+ &#39;statistics&#39;,
+ &#39;subsequences&#39;,
+ &#39;transitions&#39;]</pre>
 </div>
 
 </div>
@@ -157,6 +207,12 @@ You should consider upgrading via the &#39;/usr/bin/python -m pip install --upgr
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Testing-Existing-Methods">Testing Existing Methods<a class="anchor-link" href="#Testing-Existing-Methods"> </a></h2>
+</div>
+</div>
+</div>
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -233,6 +289,50 @@ You should consider upgrading via the &#39;/usr/bin/python -m pip install --upgr
 <img src="data:image/png;base64,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
 "
 >
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Developing-New-Methods">Developing New Methods<a class="anchor-link" href="#Developing-New-Methods"> </a></h2>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="k">def</span> <span class="nf">generate_sequence</span><span class="p">(</span><span class="n">n</span> <span class="o">=</span> <span class="mi">12</span><span class="p">,</span> <span class="n">elements</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]):</span>
+    <span class="s2">&quot;Generate a random sequence of length n, using elements from list. Defaults: n=3, elements=[1,2,3]&quot;</span>
+    <span class="k">return</span> <span class="p">[</span><span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">elements</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    
+<span class="n">generate_sequence</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[3, 1, 3, 2, 2, 3, 3, 3, 1, 1, 2, 1]</pre>
 </div>
 
 </div>

@@ -23,22 +23,22 @@ entries:
       url: core_overview.html
     - output: web,pdf
       title: Element Descriptions
-      url: core_elements.html
+      url: elements.html
     - output: web,pdf
       title: Subsequences
-      url: core_subsequences.html
+      url: subsequences.html
     - output: web,pdf
       title: Ngrams
-      url: core_ngrams.html
+      url: ngrams.html
     - output: web,pdf
       title: Transitions
-      url: core_transitions.html
+      url: transitions.html
     - output: web,pdf
       title: Spells
-      url: core_spells.html
+      url: spells.html
     - output: web,pdf
       title: Summary Statistics
-      url: core_statistics.html
+      url: statistics.html
     output: web
     title: Single Sequence Analysis
   - folderitems:
@@ -47,22 +47,22 @@ entries:
       url: multi_overview.html
     - output: web,pdf
       title: Attributes
-      url: multi_attributes.html
+      url: attributes.html
     - output: web,pdf
       title: Derivatives
-      url: multi_derivatives.html
+      url: derivatives.html
     - output: web,pdf
       title: Edit Distances
-      url: multi_edit_distances.html
+      url: editdistances.html
     - output: web,pdf
       title: Non-alignment Techniques
-      url: multi_nonalignment.html
+      url: nonalignment.html
     - output: web,pdf
       title: Spell-adjusted Distances
-      url: multi_spell_distances.html
+      url: spelldistances.html
     - output: web,pdf
       title: Whole Sequence Comparison
-      url: multi_whole_comparison.html
+      url: comparison.html
     output: web
     title: Multisequence Analysis
   - folderitems:

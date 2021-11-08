@@ -6,21 +6,21 @@
 	},
 	"Single Sequence Analysis": {
 		"Overview": "core_overview.html",
-		"Element Descriptions": "core_elements.html",
-		"Subsequences": "core_subsequences.html",
-		"Ngrams": "core_ngrams.html",
-		"Transitions": "core_transitions.html",
-		"Spells": "core_spells.html",
-		"Summary Statistics": "core_statistics.html"		
+		"Element Descriptions": "elements.html",
+		"Subsequences": "subsequences.html",
+		"Ngrams": "ngrams.html",
+		"Transitions": "transitions.html",
+		"Spells": "spells.html",
+		"Summary Statistics": "statistics.html"		
 	},
 	"Multisequence Analysis":{
 		"Overview": "multi_overview.html",
-		"Attributes": "multi_attributes.html",
-		"Derivatives": "multi_derivatives.html",
-		"Edit Distances": "multi_edit_distances.html",
-		"Non-alignment Techniques": "multi_nonalignment.html",
-		"Spell-adjusted Distances": "multi_spell_distances.html",
-		"Whole Sequence Comparison": "multi_whole_comparison.html"
+		"Attributes": "attributes.html",
+		"Derivatives": "derivatives.html",
+		"Edit Distances": "editdistances.html",
+		"Non-alignment Techniques": "nonalignment.html",
+		"Spell-adjusted Distances": "spelldistances.html",
+		"Whole Sequence Comparison": "comparison.html"
 	},
 	"External Resources":{
 		"Sequence Analysis Association": "https://sequenceanalysis.org/",
