@@ -48,9 +48,9 @@ The two obvious derivatives are the sequence representing the modal state of the
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_motif" class="doc_header"><code>get_motif</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/multi/derivatives.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_motif</code>(<strong><code>sequences</code></strong>)</p>
+<h4 id="get_motif" class="doc_header"><code>get_motif</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/derivatives.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_motif</code>(<strong><code>sequences</code></strong>)</p>
 </blockquote>
-<p>Computes the motif for a given collection of sequences. A motif is a representative sequence for all sequences in a collection, with blank values (0) being those which are variable within the collection, and fixed values which are not. Motifs are related to the measure of synchrony (see <a href="multi_attributes.html#get_synchrony"><code>get_synchrony</code></a>) in that synchrony is equal to the number of non-blank elements in the motif.</p>
+<p>Computes the motif for a given collection of sequences. A motif is a representative sequence for all sequences in a collection, with blank values (0) being those which are variable within the collection, and fixed values which are not. Motifs are related to the measure of synchrony (see <a href="/pysan/multi_attributes.html#get_synchrony"><code>get_synchrony</code></a>) in that synchrony is equal to the number of non-blank elements in the motif.</p>
 
 </div>
 
@@ -65,6 +65,45 @@ The two obvious derivatives are the sequence representing the modal state of the
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pysan.derivatives</span> <span class="kn">import</span> <span class="n">get_motif</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">s3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">s4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">sequences</span> <span class="o">=</span> <span class="p">[</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">,</span><span class="n">s3</span><span class="p">,</span><span class="n">s4</span><span class="p">]</span>
+<span class="n">get_motif</span><span class="p">(</span><span class="n">sequences</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}
@@ -80,7 +119,7 @@ The two obvious derivatives are the sequence representing the modal state of the
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_modal_state" class="doc_header"><code>get_modal_state</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/multi/derivatives.py#L26" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_modal_state</code>(<strong><code>sequences</code></strong>)</p>
+<h4 id="get_modal_state" class="doc_header"><code>get_modal_state</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/derivatives.py#L26" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_modal_state</code>(<strong><code>sequences</code></strong>)</p>
 </blockquote>
 <p>Computes the modal states for each position in a collection of sequences, returning a sequence of tuples containing the modal element and its number of occurances at that position.</p>
 
@@ -97,6 +136,65 @@ The two obvious derivatives are the sequence representing the modal state of the
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    {% endraw %}
+
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pysan.derivatives</span> <span class="kn">import</span> <span class="n">get_modal_state</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">s3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">s4</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="n">sequences</span> <span class="o">=</span> <span class="p">[</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">,</span><span class="n">s3</span><span class="p">,</span><span class="n">s4</span><span class="p">]</span>
+<span class="n">get_modal_state</span><span class="p">(</span><span class="n">sequences</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[(1, 4),
+ (1, 4),
+ (1, 3),
+ (2, 3),
+ (2, 3),
+ (3, 3),
+ (2, 3),
+ (4, 3),
+ (3, 2),
+ (3, 3),
+ (2, 2),
+ (1, 3),
+ (2, 3),
+ (2, 2),
+ (3, 3),
+ (3, 3),
+ (3, 2),
+ (4, 2),
+ (4, 2),
+ (4, 2),
+ (4, 2)]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
 
 </div>
     {% endraw %}

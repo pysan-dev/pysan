@@ -53,7 +53,7 @@ nb_path: "16_core_statistics.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="is_recurrent" class="doc_header"><code>is_recurrent</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/statistics.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>is_recurrent</code>(<strong><code>sequence</code></strong>)</p>
+<h4 id="is_recurrent" class="doc_header"><code>is_recurrent</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/statistics.py#L6" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>is_recurrent</code>(<strong><code>sequence</code></strong>)</p>
 </blockquote>
 <p>Returns true if the given sequence is recurrent (elements can exist more than once), otherwise returns false.</p>
 
@@ -85,7 +85,7 @@ nb_path: "16_core_statistics.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_entropy" class="doc_header"><code>get_entropy</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/statistics.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_entropy</code>(<strong><code>sequence</code></strong>)</p>
+<h4 id="get_entropy" class="doc_header"><code>get_entropy</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/statistics.py#L17" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_entropy</code>(<strong><code>sequence</code></strong>)</p>
 </blockquote>
 <p>Computes the normalised <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory">Shannon entropy</a>) of a given sequence, using the <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.entropy.html">scipy.stats.entropy</a> implementation. Note that this measure is insensitive to transition frequency or event order, so should be used in conjunction with other measures.</p>
 
@@ -117,7 +117,7 @@ nb_path: "16_core_statistics.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_turbulence" class="doc_header"><code>get_turbulence</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/statistics.py#L36" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_turbulence</code>(<strong><code>sequence</code></strong>)</p>
+<h4 id="get_turbulence" class="doc_header"><code>get_turbulence</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/statistics.py#L36" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_turbulence</code>(<strong><code>sequence</code></strong>)</p>
 </blockquote>
 <p>Computes turbulence for a given sequence, based on <a href="https://www.researchgate.net/publication/225402919_De-standardization_of_Family-Life_Trajectories_of_Young_Adults_A_Cross-National_Comparison_Using_Sequence_Analysis">Elzinga &amp; Liefbroer's 2007 definition</a> which is also implemented in the <a href="http://traminer.unige.ch/doc/seqST.html">TraMineR</a> sequence analysis library.</p>
 
@@ -149,7 +149,7 @@ nb_path: "16_core_statistics.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_complexity" class="doc_header"><code>get_complexity</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/statistics.py#L68" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_complexity</code>(<strong><code>sequence</code></strong>)</p>
+<h4 id="get_complexity" class="doc_header"><code>get_complexity</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/statistics.py#L68" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_complexity</code>(<strong><code>sequence</code></strong>)</p>
 </blockquote>
 <p>Computes the complexity of a given sequence, based on TraMineR's <a href="http://traminer.unige.ch/doc/seqici.html">seqici</a> method.</p>
 
@@ -181,7 +181,7 @@ nb_path: "16_core_statistics.ipynb"
 
 
 <div class="output_markdown rendered_html output_subarea ">
-<h4 id="get_routine" class="doc_header"><code>get_routine</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/core/statistics.py#L100" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_routine</code>(<strong><code>sequence</code></strong>, <strong><code>duration</code></strong>)</p>
+<h4 id="get_routine" class="doc_header"><code>get_routine</code><a href="https://github.com/pysan-dev/pysan/tree/master/pysan/statistics.py#L100" class="source_link" style="float:right">[source]</a></h4><blockquote><p><code>get_routine</code>(<strong><code>sequence</code></strong>, <strong><code>duration</code></strong>)</p>
 </blockquote>
 <p>Computes a normalised measure of routine within a sequence for a given duration within that sequence. E.g. with a sequence where each element is one day, calling get_routine() with a duration of 7 would look at weekly routines. Note that this routine measure is identical to the multisequence measure of synchrony, but applied within-sequence in duration length chunks.</p>
 

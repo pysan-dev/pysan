@@ -12,12 +12,15 @@ entries:
     - output: web,pdf
       title: Quick Start
       url: quick_start.html
+    - output: web,pdf
+      title: Upcoming Features
+      url: upcoming_features.html
     output: web
     title: Getting Started
   - folderitems:
     - output: web,pdf
       title: Overview
-      url: core_overview
+      url: core_overview.html
     - output: web,pdf
       title: Element Descriptions
       url: core_elements.html
